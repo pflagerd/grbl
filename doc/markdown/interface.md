@@ -477,7 +477,7 @@ Feedback messages provide non-critical information on what Grbl is doing, what i
 
   - Grbl will generate and transmit a report within ~5-20 milliseconds.
 
-  - Every ’?’ command sent by a GUI is not guaranteed with a response. The following are the current scenarios when Grbl may not immediately or ignore a status report request. _NOTE: These may change in the future and will be documented here._
+  - Every ’?’ command sent by a GUI is not guaranteed with a response. The following are the current scenarios when Grbl may not immediately send a status report request or may ignore a status report request. _NOTE: These may change in the future and will be documented here._
 
     - If two or more '?' queries are sent before the first report is generated, the additional queries are ignored.
 
@@ -673,7 +673,7 @@ Feedback messages provide non-critical information on what Grbl is doing, what i
       
       - This data field appears:
 
-			- When any accessory state is enabled.
+        	- When any accessory state is enabled.
         	- Only with the override values field in the same message. Any accessory state change will trigger the accessory state and override values fields to be shown on the next report.
 
       - This data field will not appear if:
